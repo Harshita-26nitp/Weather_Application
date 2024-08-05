@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css" class="css">
+</head>
+<body>
+    <section>
+        <img src="bgfinal.jpeg" id="bg">
+        <img src="moon.png" id="moon">
+       
+         <img src="orangem.png" id="mountain">
+         <img src="best-2.png" id="road">
+        <h2 id="text">Hello</h2>
+    </section>
+    
+      <nav>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Location</a></li>
+          </ul>
+      </nav>
+      <div class="main3">
+      <div class="main1">
+          <H1>Welcome To Our Website!</H1>
+          <br>
+          <br>
+          <h2>Is It Cloudy or Clear??</h2>
+          <br>
+         
+          <h4>Get the weather of your Area at Fingertips</h4>
+        <br>
+        <br>
+       
+          <button type="button" class="btn1"><a href="index1.html">Click Me</a></button>
+      </div>
+      </div>
+      
+  <script>
+    
+     document.addEventListener('DOMContentLoaded', function() {
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function() {
+        let value = window.scrollY;
+
+        bg.style.top = (value * 0.5) + 'px';
+        moon.style.top = (value * 0.5) + 'px';
+        mountain.style.top = (value * 0.15) + 'px';
+        road.style.top = (value * 0.15) + 'px';
+    });
+
+});
+
+
+    </script>
+    
+    
+</body>
+</html>
